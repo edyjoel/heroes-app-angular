@@ -10,6 +10,8 @@ export class ImagenPipe implements PipeTransform {
       return 'assets/no-image.png';
     } else if (heroe.alt_img) {
       return heroe.alt_img;
+    } else if (heroe.alt_img === '') {
+      return 'assets/no-image.png';
     } else {
       return `assets/heroes/${heroe.id}.jpg`;
     }

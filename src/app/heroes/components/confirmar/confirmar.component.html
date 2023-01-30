@@ -1,0 +1,13 @@
+<div class="dialog">
+  <h1>¿Está seguro?</h1>
+  <hr>
+  <p>
+    Está a punto de eliminar a <strong>{{ data.superhero }}</strong> de la lista de héroes.
+    <br>
+    ¿Desea continuar?
+  </p>
+  <div>
+    <button mat-raised-button color="primary" (click)="confirmar()">Sí</button>
+    <button mat-raised-button color="warn" (click)="cancelar()">No</button>
+  </div>
+</div>
